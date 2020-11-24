@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+ body,
+  html {
+      height: 100vh;
+  }
+ /* BWM | Home Page */
+  #home-page {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 25% 30% 30% 12%;
+      grid-template-rows: 25% 62% 13%;
+      grid-template-areas:
+          "imgLogo nav     nav     search"
+          "main    main    main  aside"
+          "footer  footer  footer  footer";
+  }
+  /* BWM | Coming Soon Page */
+  #comingSoon-page {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 25% 30% 30% 12%;
+      grid-template-rows: 25% 62% 13%;
+      grid-template-areas:
+          "imgLogo nav     nav     search"
+          "main    main    main  aside"
+          "footer  footer  footer  footer";
+  }
+  /* BWM | Links Page */
+  #links-page {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 25% 30% 30% 12%;
+      grid-template-rows: 25% 62% 13%;
+      grid-template-areas:
+          "imgLogo nav     nav     search"
+          "main    main    aside  aside"
+          "footer  footer  footer  footer";
+  }
+   /* BWM | Video Page */
+   #video-1-page {
+       margin: 0;
+       display: grid;
+       grid-template-columns: 25% 30% 30% 12%;
+       grid-template-rows: 25% 62% 13%;
+       grid-template-areas:
+           "imgLogo nav     nav     search"
+           "main    main    aside  aside"
+           "footer  footer  footer  footer";
+   }
+   /* BWM |Contact us Page */
+  #contactus-page {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 25% 30% 30% 12%;
+      grid-template-rows: 25% 62% 13%;
+      grid-template-areas:
+          "imgLogo nav     nav     search"
+          "main    main    aside  aside"
+          "footer  footer  footer  footer";
+  }
+  /* Header of the page */
+   section:nth-of-type(1) {
+     grid-area: imgLogo;
+ }
+   section:nth-of-type(1) img {
+     margin-top: 0px;
+     margin-left: 120px;
+     width: 170px;
+ }
+   nav {
+      grid-area: nav;
+  }
+   nav a {
+     text-decoration: none;
+     color: white;
+     font-size:27px;
+   }
+    nav a:hover {
+        color: #ff1db1;
+        padding-bottom: 10px;
+        border-bottom: 5px solid #ff1db1;
+        font-size:27px;
+    }
+    nav ul {
+        list-style-type: none;
+        margin-top:70px;
+        float:right;
+        border-bottom : 4px solid white;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+     nav li{
+        display: inline-block;
+        padding: 10px 13px;
+        font-family:Agency FB;
+}
+     section:nth-of-type(2) {
+         grid-area: search;
+         padding-top: 53%;
+         padding-left: 30%;
+     }
+    /*Icon Search toggle button*/
+     section:nth-of-type(2)  a {
+        text-decoration: none;
+        color :white;
+     }
+    section i {
+        color: white;
+        font-size: 35px;
+    }
+    section i:hover {
+        color: #c9259e;
+    }
+ /*popUp */
+
+ section:nth-of-type(2) .overlay {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(0, 0, 0, 0.7);
+     transition: opacity 500ms;
+     visibility: hidden;
+     opacity: 0;
+ }
+ section:nth-of-type(2) .overlay:target {
+     visibility: visible;
+     opacity: 1;
+      transition: all 1s ease-in-out;
+ } 
+ section .popup {
+     margin: 70px auto;
+     padding: 14px;
+     background: #fff;
+     border-radius: 2px;
+     width: 30%;
+     position: relative;
+ }
+ section form {
+    margin-left: 37px;
+}
+ section form input {
+  font-family: 'Poiret One',cursive;
+  margin-top: -5px;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  width:250px;
+  border-bottom: 3px solid #ff1db1;
+}
+ section:nth-of-type(2) form button {
+   background-color:#ff1db1;
+   margin-top: 3px;
+   border: none;
+   color: white;
+   padding: 7px 7px 7px 7px;
+   text-align: center;
+   font-family: 'Poiret One', cursive;
+   font-size: 17px;
+ }
+  section:nth-of-type(2) form button:hover {
+      background-color: #f898d6;
+      border: #ff1db1;
+      color: #ff1db1;
+      font-weight: 800;
+      padding: 7px 7px 7px 7px;
+      text-align: center;
+      font-family: 'Poiret One', cursive;
+      font-size: 17px;
+  }
+ section:nth-of-type(2) .popup h2 {
+     margin-top: 0;
+     text-align: center;
+     font-family: 'Poiret One', cursive;
+     color: #333;
+     font-weight: 700;
+     font-size: 30px;
+ }
+ section:nth-of-type(2) .popup .close {
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     
+     font-size: 30px;
+     font-weight: bold;
+     text-decoration: none;
+     color: #333;
+ }
+ section:nth-of-type(2) .popup .close:hover {
+     color: #d806bf;
+ }
+ section:nth-of-type(2) .popup .content {
+     font-weight: 700;
+     font-size: 20px;
+     color: black;
+     max-height: 30%;
+     overflow: auto;
+ }
+ /*End of PopUp-Search Bar*/
+    
+
+/* Main of the Page */
+ section:nth-of-type(3) {
+     grid-area: hello;
+
+ }
+  aside {
+      grid-area: aside;
+     
+  }
+
+  main {
+      grid-area: main;
+     
+  }
+
+/* Footer of the Page */
+  footer {
+      grid-area: footer;
+  }
+  footer a {
+      text-decoration: none;
+      color: white;
+  }
+  footer a:hover {
+      color: #ff1db1;
+      padding-bottom: 10px;
+      font-size: 27px;
+  }
+  footer ul {
+      list-style-type: none;
+     margin-right: 15%;
+     margin-top: 30px;
+      float:right;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-radius: 5px;
+  }
+  footer li {
+      display: inline-block;
+      padding: 10px 13px;
+      font-size: 27px;
+      font-family: Agency FB;
+}
+   footer p {
+       float: left;
+       color: white;
+       margin-top: 42px;
+       margin-left:26%;
+       font-size: 22px;
+       font-family: Agency FB;
+}
+  /*tooltap social media*/
+  ul li.facebook div.slider {
+      background: #9525fa;
+  }
+  ul li.youtube-2 div.slider {
+      background: #d94133;
+    
+  }
+  ul li.instagram div.slider {
+      background: #c9259e;
+      
+  }
+  ul li.whatsapp div.slider {
+      background: #62a942;
+      margin-top: 0.61%;
+    
+  }
+  .slider {
+      content: "";
+      position: absolute;
+      margin-top: 6px;
+      right: 120px;
+      width: 0px;
+      height: 42px;
+      border-radius: 4px;
+      transition: all 0.5s 0.3s ease;
+  }
+  .slider p {
+      font-family: 'Poiret One', cursive;
+      font-size: 16px;
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      line-height: 11px;
+      opacity: 0;
+  }
+  ul li:hover .slider {
+      width: 140px;
+      transition: all 0.5s ease;
+  }
+  ul li:hover .slider p {
+      opacity: 1;
+      padding-left: 10px;
+      transition: all 1s 0.2s ease;
+  }
+  /*For 6+ , 7+ , 8+ , and any 6.7in screen size */
+  @media only screen and (max-width: 540px) {
+           /* BWM | Home Page */
+   #home-page {
+        margin: 0;
+        display: grid;
+        grid-template-columns:  50% 50%;
+        grid-template-rows: 14% 18% 37% 25% 6%;
+        grid-template-areas:
+        "imgLogo  search  search  search"
+        "nav      nav     nav     nav"
+        "main     main    main    main"
+        "aside    aside   aside   aside"
+        "footer   footer  footer  footer";
+           }
+            /* BWM | Coming Soon Page */
+    #comingSoon-page {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 14% 15% 40% 25% 6%;
+        grid-template-areas:
+        "imgLogo  search  search  search"
+        "nav      nav     nav     nav"
+        "main     main    main    main"
+        "aside    aside   aside   aside"
+        "footer   footer  footer  footer";
+            }
+             /* BWM | Links Page */
+    #links-page {
+         margin: 0;
+         display: grid;
+         grid-template-columns: 50% 50%;
+         grid-template-rows: 14% 15% 40% 25% 6%;
+         grid-template-areas: 
+         "imgLogo  search  search  search"
+         "nav      nav     nav     nav"
+         "aside    aside   aside   aside"
+         "main     main    main    main"
+         "footer   footer  footer  footer";
+      }
+             /* BWM | Video Page */
+     #video-1-page {
+           margin: 0;
+           display: grid;
+           grid-template-columns: 50% 50%;
+           grid-template-rows: 14% 12% 29% 39% 6%;
+           grid-template-areas: 
+           "imgLogo  search  search  search"
+           "nav      nav     nav     nav"
+           "aside    aside   aside   aside"
+           "main     main    main    main"
+           "footer   footer  footer  footer";
+      }
+            /* BWM | Contact us Page */
+      #contactus-page {
+          margin: 0;
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 14% 12% 8% 60% 6%;
+          grid-template-areas: 
+          "imgLogo  search  search  search"
+          "nav      nav     nav     nav"
+          "hello    hello   hello   hello"
+          "main     aside    aside   aside"
+          "footer   footer  footer  footer";
+      }
+     section:nth-of-type(3) {
+      grid-area: hello;
+  }
+    /* Header of the page */
+    section:nth-of-type(1) img {
+        margin-left: 50px;
+        margin-bottom: 20px;
+        margin-top:10px;
+        width:90px;
+          }
+    section:nth-of-type(2) i {
+        color: white;
+        font-size: 40px;
+        float: right;
+        margin: 45px 70px 0px 0px;
+        text-align: center;
+          }
+          section:nth-of-type(2) i:hover {
+        color:#ff1db1;
+          }
+           section:nth-of-type(2) {
+              padding: 0;
+           }
+
+           /*Icon Search toggle button*/
+           section:nth-of-type(2) a {
+               text-decoration: none;
+               color: white;
+           }
+      
+           nav a {
+               text-decoration: none;
+               color: white;
+                font-size:11px;
+           }
+           nav a:hover {
+               color: #ff1db1;
+               padding-bottom: 10px;
+               border-bottom: 5px solid #ff1db1;
+               font-size:11px;
+           }
+           nav ul {
+               list-style-type: none;
+               float: left;
+               margin-top: 20px;
+               margin-left:7px;
+               border-bottom: 4px solid white;
+               padding-right: 10px;
+               padding-left: 10px;
+               border-radius: 5px;
+           }
+           nav li {
+               display: inline-block;
+               padding: 10px 13px;
+               font-size: 13px;
+font-family: Agency FB;
+}
+            /* Footer of the page */
+footer a {
+font-family: Agency FB;
+font-size:11px;
+}
+            footer a:hover {
+                color: lightcoral;
+                padding-bottom: 10px;
+                font-size:14px;
+            }
+
+            footer ul {
+                list-style-type: none;
+                margin-top:0px;
+                margin-right:0%;
+                float:right;
+                padding-right: 10px;
+                padding-left: 10px;
+                border-radius: 5px;
+            }
+
+            footer li {
+                display: inline-block;
+                padding:2px 5px;
+            }
+            footer p {
+                float:left;
+                color: white;
+                margin-top:16px;
+                margin-left:4px;
+                font-size: 10px;
+font-family: Agency FB;
+}
+             /*tooltap social media  display = none */
+             ul li.facebook div.slider {
+                 display: none;
+             }
+
+             ul li.youtube-2 div.slider {
+                 display: none;
+             }
+
+             ul li.instagram div.slider {
+                 display: none;
+             }
+
+             ul li.whatsapp div.slider {
+                 display: none;
+             }
+
+             .slider {
+                 display: none;
+             }
+
+             .slider p {
+                 display: none;
+             }
+     
+ }

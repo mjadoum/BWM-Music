@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mustafa Jadoun">
+    <meta name="description" content="BWM Music Jazz music ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--link for External CSS-->
+    <link rel="stylesheet" href="css/style.css">
+      <!--link for font awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--link for to add BWM icon in the title bar-->
+    <link rel = "icon" href ="images/logo2.svg" type = "image/x-icon"> 
+    <title>BWM | Links</title>
+<style>
+     body {
+    background-image: url("images/sec-background.png");
+    background-position: center;
+    background-size: cover;
+  }
+    main{
+    font-family: 'Poiret One', cursive;  
+    margin-left:10%;
+    line-height: 30px;
+    color: white;
+   }
+
+   /*For nav - bar in the Header*/
+   .active{
+    color: #ff1db1;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #ff1db1;
+    font-size:27px;
+   }
+   main h1{
+    font-size: 30px;
+    padding-left:45px;
+   }
+   main img{
+       width:100px;
+   }
+   main img:hover{
+    box-shadow:1px 2px 15px 5px  #ae20ff;
+   }
+   main p{
+    margin-top: -10px;
+    font-weight: 700;
+   }
+   main ul{
+  margin-bottom:-10px;
+   }
+   #sec-line{
+     margin-top:7550px;
+   display:inline;
+   }
+   main ul li{
+     display:inline-flex;
+     list-style-type: none;
+     margin-right:10px ;
+    margin-bottom:-60px;
+   }
+   
+   .albumNames li{
+     padding-right:25px;
+     margin-top:-20px ;
+   }
+   #sec-line .albumNames li{
+     padding-right:21px;
+   }
+     main button{
+    color:white;
+    visibility: hidden;
+    background-color:#ff1db1 ;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-weight: 600;
+    font-size: 15px;
+   }
+    main button:hover{
+    color:#ff1db1 ;
+    background-color:pink ;
+   }
+   aside{
+    font-family: 'Poiret One', cursive; 
+    color: white;
+   }
+   aside .span1{
+    color: #ae20ff;
+    font-size: 30px;
+   }
+    aside .span2{
+    color: #ff1db1 ;
+      font-size: 30px;
+   }
+    aside .span3{
+    color:#ff6426;
+      font-size: 30px;
+   }
+   aside h3{
+    font-size: 30px;
+    padding-left:45px;
+   }
+   aside img{
+    width:40px;
+    padding: 20px;
+   }
+   aside p{
+    font-weight: 700;
+   }
+   aside ul{
+     display: inline-block;
+     list-style-type: none;
+     margin-right:-40px ;
+   }
+    aside .right li{
+   margin-bottom: 28%;
+   }
+   aside .left{
+     float: left;
+   }
+    aside .right{
+
+    margin-top:6%;
+    float: right;
+    margin-right:32%;
+   }
+    aside .right li a{
+    text-decoration: none;
+    color: white;
+   }
+    aside .right li a:hover{
+    color: #ff1db1;
+   }
+    /*For nav - bar in the Footer*/
+   .footer-active{
+    color: #ff1db1;
+   }
+   @media only screen and (max-width: 540px) {
+     body{
+        background-image: url("images/sec-mobile-background.png");
+        background-size: cover;
+     }
+       /*For nav - bar in the Header*/
+      .active{
+        color: #ff1db1;
+        padding-bottom: 10px;
+        border-bottom: 5px solid #ff1db1;
+        font-size:15px;
+   }
+           /*popUp */
+
+           section .overlay {
+               position: fixed;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               background: rgba(0, 0, 0, 0.7);
+               transition: opacity 500ms;
+               visibility: hidden;
+               opacity: 0;
+
+           }
+
+           section .overlay:target {
+               visibility: visible;
+               opacity: 1;
+               transition: all 1s ease-in-out;
+           }
+
+           section .popup {
+               margin: 70px auto;
+               padding: 14px;
+               background: #fff;
+               border-radius: 2px;
+               width:70%;
+               position: relative;
+
+           }
+
+           section form input {
+               font-family: 'Poiret One',
+                   cursive;
+               margin-top: -5px;
+               margin-left: -12px;
+               font-weight: 800;
+               font-size: 15px;
+               padding: 5px;
+               border: none;
+               width: 150px;
+               border-bottom: 3px solid #ff1db1;
+           }
+
+           section form button {
+               background-color: #ff1db1;
+               margin-top: 15px;
+               border: none;
+               color: white;
+               padding: 7px 7px 7px 7px;
+               text-align: center;
+               font-family: 'Poiret One', cursive;
+               font-size: 10px;
+           }
+
+           section form button:hover {
+               background-color: #f898d6;
+               border: #ff1db1;
+               color: #ff1db1;
+               font-weight: 800;
+               padding: 7px 7px 7px 7px;
+               text-align: center;
+               font-family: 'Poiret One', cursive;
+               font-size: 11px;
+           }
+
+           section .popup h2 {
+               margin-top: 0;
+               text-align: center;
+               font-family: 'Poiret One', cursive;
+               color: #333;
+               font-weight: 700;
+               font-size: 20px;
+
+           }
+
+           section .popup .close {
+               position: absolute;
+               top: 20px;
+               right: 30px;
+
+               font-size: 20px;
+               font-weight: bold;
+               text-decoration: none;
+               color: #333;
+           }
+
+           section .popup .close:hover {
+               color: #d806bf;
+           }
+
+           section .popup .content {
+               font-weight: 700;
+               font-size: 20px;
+               color: black;
+               max-height: 30%;
+               overflow: auto;
+
+           }
+
+           /*End of PopUp-Search Bar*/
+   /*start main Tag*/
+    main{
+       margin-left:10%;
+       line-height: 20px;
+       margin-top:-10px;
+   }
+    main h1{
+    font-size: 20px;
+    margin-top: -80px;
+    margin-bottom:45px;
+    margin-left: -35px;
+   }
+    main img{
+       width:50px;
+   }
+    main p{
+    font-weight:500;
+    font-size: 7px;
+    padding-top: 10px;
+   }
+  main ul{
+    margin-top: 0px;
+  margin-bottom:-10px;
+   }
+   #sec-line{
+     margin-top: 25px;
+     display: none;
+   }
+   main ul li{
+     display:inline-flex;
+     list-style-type: none;
+     margin-right:10px ;
+    margin-bottom:-60px;
+   }
+   
+   .albumNames li{
+     padding-right: 20px;
+   }
+   main .albums{
+       margin-left:5px;
+       margin-top: -15px;
+   }
+   /*start aside Tag*/
+    aside{
+    font-family: 'Poiret One', cursive; 
+    color: white;
+   }
+    aside .span1{
+    color: #ae20ff;
+    font-size:40px;
+   }
+    aside .span2{
+    color: #ff1db1 ;
+      font-size: 40px;
+   }
+    aside .span3{
+    color:#ff6426;
+      font-size: 40px;
+   }
+    aside h3{
+    
+    margin-top: -20px;
+    margin-left:15px;
+   }
+    aside .left{
+     float: left;
+   }
+     aside ul{
+     margin-top: -3%;
+     display: inline-block;
+     list-style-type: none;
+   }
+    aside img{
+    width:20px;
+    padding:10px;
+   }
+   aside .right{  
+    margin-top: -3%;
+    float: right;
+    margin-right:30%;
+   }
+    aside .right li{
+    margin-bottom:15%;
+   }
+    aside .right li a{
+    text-decoration: none;
+    color: white;
+   }
+    aside .right p{
+    font-weight: 700;
+    font-size: 13px;    
+   }
+ 
+    main button{
+     visibility: visible;
+     color:white;
+     margin-left:34%;
+     margin-top:30px;
+     background-color:#ff1db1 ;
+     border: none;
+     padding: 7px 15px 7px 15px;
+     font-weight: 500;
+     font-size: 8px;
+   }
+   }
+</style>
+</head>
+<body id="links-page">
+        <!--section of nav-brand logo-->
+       <section> 
+          <a href="index.html"><h2><img src="images/logo2.svg" alt="logo"></h2></a>
+       </section>
+        <!--nav-bar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" >Home</a>
+                </li>
+                <li>
+                     <a href="coming-soon.html">Coming Soon</a>
+                </li>
+                <li>
+                     <a href="links.html" class="active">Links</a>
+                </li>
+                <li>
+                     <a href="video-1.html">Video</a>
+                </li>
+                <li>
+                     <a href="contactus.html">Contact Us</a>
+                </li>
+
+            </ul>
+        </nav>
+         <!--section of search icon-->
+         <section >
+           <a class="search-button" href="#popup-seacrh"> <i class="fas fa-search"></i></a>  
+              <!--PopUp for search-->
+        
+        <div id="popup-seacrh" class="overlay">
+	    <div class="popup">
+		  <h2> <span style="color: #ae20ff;"> Hello</span> <span style="color:#ff6426; "> Frined !</span></h2>
+		  <a class="close" href="#">&times;</a>
+		  <div class="content">
+			<form action="/action_page.php">
+                <input type="search" id="search" name="search">
+                <button type="submit">Search</button>
+            </form>
+		  </div>
+	     </div>
+         </div>
+         </section>
+  
+          <!-- main-->
+    <main>
+       <h1>JAZZ Albums Playlists</h1>
+       <div class="albums">
+       <ul >
+           <li>
+               <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZKLb3GCdvv679QQ6XbYAPSw" target="blank"> <img src="images/albums/image-1.png" alt=""></a>
+           </li>
+          
+           <li>
+                <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZLCldUPJ4oFs1HnGCctSqdd" target="blank"><img src="images/albums/albume-3.png" alt=""></a>
+           </li>
+         
+           <li>
+                <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZJLvBbSYKvUhi84qVFl_RSx" target="blank"> <img src="images/albums/albume-2.png" alt=""></a>
+           </li>
+           
+            <li>
+                <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZKd2LnxIl4nsItZRqU_97zE" target="blank"> <img src="images/albums/albume-4.png" alt=""></a>
+           </li>
+          
+       </ul>
+       <ul class="albumNames">
+           <li>
+              <p>Pacific JAZZ</p>
+           </li>
+             <li>
+                <p>Snake JAZZ</p>
+           </li>
+            <li>
+              <p>JAZZ Album</p>
+           </li>
+             <li>
+              <p>Band Ball</p>
+           </li>
+       </ul>
+       <div id="sec-line">
+       <ul >
+           <li>
+                <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZL4_uJ80eZ6adlNiMkFpRUt" target="blank"><img src="images/albums/albume-5.png" alt=""></a>
+           </li>
+             
+           <li>
+                 <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZLwN09wt_QHojM-XTAcEzr0" target="blank"><img src="images/albums/abum-3.png" alt=""></a>
+           </li>
+            
+           <li>
+                <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZKyfdnuMjKQIKYVw2A1Bp6O" target="blank"><img src="images/albums/Jazz-Ballands.png" alt=""></a>
+           </li>
+           
+           <li>
+                 <a href="https://www.youtube.com/playlist?list=PLFF4NR-1JvZIavTc1PadikBdKcQ6BIqlJ" target="blank"><img src="images/albums/Jazz&Blue.png" alt="" ></a>
+           </li>
+           
+       </ul>
+       <ul  class="albumNames" >
+        <li>
+            <p >Charlie Parker</p>
+              
+           </li>
+           <li>
+            <p>The World </p>
+           </li>
+            <li>
+              <p>Jazz Ballads</p>
+           </li>
+            <li>
+              <p>kind of blue</p>
+           </li>
+       </ul>
+       </div>
+       </div>
+        <button class="display-none" id="button" > More Albums</button>
+    </main>
+     <!--aside for details contact -->
+    <aside> 
+        <h3>
+            <strong class="span1">Blue</strong>
+            <strong class="span2">Water</strong>
+            <strong class="span3">Music</strong>
+        </h3>
+        <ul class="left">
+            <li>
+               <img src="images/icons-contact/phone.png" alt="phone">
+            </li>
+            <li>
+               <img src="images/icons-contact/email.png" alt="Email">
+            </li>
+            <li>
+               <img src="images/icons-contact/map.png" alt="Map">
+            </li>
+        </ul>
+         <ul class="right">
+            <li>
+              <a href="tel:+15555551212"><p>+447460032396</p></a>
+             
+            </li>
+            <li>
+              <a href="mailto:mjadoon133@gmail.com"><p>Mjadoon133@gmail.com</p></a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/48i4bC1ESg6UMGT59" target="blank"><p>190 Cathedral St, Glasgow G4 0RF</p></a>
+            </li>
+        </ul>
+        
+    </aside>
+     <!--footer-->
+    <footer>
+        <p>@Copyright BWM 2020</p>
+         <ul>
+                <li>
+                    <a href="index.html" >Home</a>
+                </li>
+                <li>
+                     <a href="coming-soon.html">Coming Soon</a>
+                </li>
+                <li>
+                     <a href="links.html" class="footer-active">Links</a>
+                </li>
+                <li>
+                     <a href="video-1.html">Video</a>
+                </li>
+                <li>
+                     <a href="contactus.html">Contact Us</a>
+                </li>
+
+            </ul>
+    </footer>
+    <script> 
+    /* toggle button for Links page */
+var buttonMore = document.getElementById("button");
+   
+buttonMore.onclick = function () {
+  "use stract";
+  var album = document.getElementById("sec-line");
+  if (album.style.display === "none") {
+    album.style.display = "block";
+    document.getElementById("button").innerHTML="Less Albums";
+  } else{
+    album.style.display = "none";
+    document.getElementById("button").innerHTML="More Albums";
+  }
+}
+
+    </script>
+</body>
+
+
+</html>
